@@ -4,6 +4,7 @@ import BookCar from '../BookCar';
 import ScrollTop from '../ScrollTop';
 import { NavMenu } from '../NavMenu';
 import { PlanTrip } from '../PlanTrip';
+import { PickCar } from '../PickCar';
 
 
 export class Layout extends Component {
@@ -15,7 +16,8 @@ export class Layout extends Component {
         <NavMenu/>
         <Home />
             <BookCar />
-        <PlanTrip/>
+            <PlanTrip />
+        <PickCar/>
         <ScrollTop/>
       </div>
     );
