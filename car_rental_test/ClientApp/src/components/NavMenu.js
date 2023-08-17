@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../images/Navbar/Car Rental.png"
-import "./NavMenu.css"
+import "./styles/NavMenu.css"
 export class NavMenu extends Component {
   constructor(props) {
     super(props);
@@ -52,53 +52,7 @@ export class NavMenu extends Component {
 
     return (
       <>
-       <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-          <div onClick={openNav} className="mobile-navbar_close">
-            <FaTimes />
-          </div>
-          <ul className="mobile-navbar_links">
-            <li>
-              <Link onClick={openNav} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/models">
-                Models
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/team">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/contact">
-                Contact
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/sign-in">
-                Sign in
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/register">
-                Register
-              </Link>
-            </li>
-          </ul>
-        </div>
+        
 
         {/* For Desktops */}
 
