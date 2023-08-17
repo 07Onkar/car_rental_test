@@ -3,7 +3,7 @@ import { Home } from '../Home';
 import BookCar from '../BookCar';
 import ScrollTop from '../ScrollTop';
 import { NavMenu } from '../NavMenu';
-import { PlanTrip } from '../PlanTrip';
+import { Plantrip } from '../Plantrip';
 
 
 export class Layout extends Component {
@@ -15,7 +15,7 @@ export class Layout extends Component {
         <NavMenu/>
         <Home />
             <BookCar />
-        <PlanTrip/>
+        <Plantrip/>
         <ScrollTop/>
       </div>
     );
