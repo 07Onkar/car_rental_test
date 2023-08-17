@@ -130,7 +130,7 @@ export class Register extends Component {
                                     placeholder="Password"
                                     onChange={this.handleChange}
                                 />
-                                <button onClick={this.togglePasswordVisibility} type="button">
+                                <button onClick={this.togglePasswordVisibility} className="btn-pass" type="button">
                                     <FontAwesomeIcon
                                         icon={showPassword ? faEyeSlash : faEye}
                                     />

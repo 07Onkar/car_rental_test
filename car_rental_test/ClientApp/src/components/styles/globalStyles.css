@@ -2653,12 +2653,19 @@
     text-decoration: none;
   }
   
+  .btn-pass{
+    position: absolute;
+    /* top:100px */
+    bottom:50px;
+    left:400px;
+    font-size: 17px;
+  }
   .password-input {
-    position: relative;
+    width: 100%;
   }
   
   .password-input input[type="password"] {
-    padding-right: 35px;
+    padding-right: 5px;
   }
   
   .password-input button {
@@ -2703,6 +2710,7 @@
     font-size: medium;
   }
   
+  
   /* Responsive Styles */
   @media (max-width: 768px) {
     .container-register {
@@ -2715,7 +2723,13 @@
     }
   
     .signUpGoogle a {
-      padding: 10px 110px;
+      padding: 10px 80px;
+      
+    }
+    .signUpButton{
+      padding: 10px 147px;
+     
+      right:-10px;
     }
   
     .signup-head h2 {
@@ -2733,13 +2747,8 @@
       font-size: 14px;
     }
   
-    .signUpButton {
-      padding: 10px 178px;
-      font-size: 14px;
-    }
-  
     .password-input input[type="password"] {
-      padding-right: 30px;
+      padding-right: 0px;
     }
   
     .password-input button i {
@@ -2752,6 +2761,13 @@
   
     .already {
       font-size: small;
+    }
+    .btn-pass{
+      position: absolute;
+      /* top:100px */
+      bottom:50px;
+      left:300px;
+      font-size: 17px;
     }
   }
   
