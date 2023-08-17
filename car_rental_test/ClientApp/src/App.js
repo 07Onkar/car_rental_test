@@ -1,10 +1,9 @@
 import React, { Component } from "react";
 import { Route, Routes } from "react-router-dom";
-import AppRoutes from "./AppRoutes";
-import { Layout } from "./components/pages/Layout";
-import "./custom.css";
+
 import { NavMenu } from "./components/NavMenu";
-import BookCar from "./components/BookCar";
+import { Home } from "./pages/Home";
+import {About} from "./pages/About"
 
 
 export default class App extends Component {
@@ -12,16 +11,14 @@ export default class App extends Component {
 
   render() {
     return (
-      <Layout>
-        <NavMenu />
-        <BookCar />
+      <>
+        <NavMenu/>
         <Routes>
-          {AppRoutes.map((route, index) => {
-            const { element, ...rest } = route;
-            return <Route key={index} {...rest} element={element} />;
-          })}
+          
+          <Route path="/" element={<Home/>} />
+          <Route path="/about" element={<About/>} />
         </Routes>
-      </Layout>
+        </>
     );
   }
 }

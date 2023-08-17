@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
-import {Footer} from '../Footer';
-import {HeroPages} from '../HeroPages';
-import {PlanTrip} from '../PlanTrip';
-import AboutMain from './images__/about/about-main.jpg';
-import Box1 from './images__/about/icon1.png';
-import Box2 from './images__/about/icon2.png';
-import Box3 from './images__/about/icon3.png';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import ScrollTop from '../ScrollTop';
+import React, { Component } from "react";
+import { Footer } from "../components/Footer";
+import { HeroPages } from "../components/HeroPages";
+import { PlanTrip } from "../components/PlanTrip";
+import AboutMain from "../images/about/about-main.jpg";
+import Box1 from "../images/about/icon1.png";
+import Box2 from "../images/about/icon2.png";
+import Box3 from "../images/about/icon3.svg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import ScrollTop from "../components/ScrollTop";
 
 export class About extends Component {
   render() {
@@ -49,11 +49,7 @@ export class About extends Component {
                     </span>
                   </div>
                   <div className="about-main_text_icons_box">
-                    <img
-                      src={Box3}
-                      alt="car-icon"
-                      className="last-fk"
-                    />
+                    <img src={Box3} alt="car-icon" className="last-fk" />
                     <span>
                       <h4>75+</h4>
                       <p>Repair Shop</p>
@@ -83,5 +79,3 @@ export class About extends Component {
     );
   }
 }
-
-

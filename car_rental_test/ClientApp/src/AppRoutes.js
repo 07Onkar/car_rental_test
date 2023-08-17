@@ -1,11 +1,11 @@
 
-import { Home } from "./components/Home";
-import { About } from "./components/pages/About";
+import { Hero } from "./components/Hero";
+import { About } from "./pages/About";
 
 const AppRoutes = [
   {
     index: true,
-    element: <Home />
+    element: <Hero />
   },
   {
     path: '/about',

@@ -4,8 +4,8 @@ import HeroCar from "../images/cars-big/hero/main-car.png";
 import { Link } from "react-router-dom";
 import ScrollTop from "./ScrollTop";
 
-export class Home extends Component {
-  static displayName = Home.name;
+export class Hero extends Component {
+  static displayName = Hero.name;
 
   render() {
     const bookBtn = () => {
