@@ -8,6 +8,7 @@ import Models from "./pages/Models";
 import Testimonials from "./pages/TestimonialsPage";
 import Contact from "./pages/Contact";
 import { SignIn } from "./pages/SignIn";
+import { Register } from "./pages/Register";
 
 
 export default class App extends Component {
@@ -25,6 +26,7 @@ export default class App extends Component {
                 <Route path="/testimonials" element={<Testimonials/>} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/sign-in" element={<SignIn />} />
+                <Route path="/register" element={<Register />} />
         </Routes>
         </>
     );
