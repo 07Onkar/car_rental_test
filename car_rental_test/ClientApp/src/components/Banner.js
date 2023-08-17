@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "./styles/globalStyles.css"
 export class Banner extends Component {
     render() {
         return (

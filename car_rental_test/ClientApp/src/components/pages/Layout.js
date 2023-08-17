@@ -5,7 +5,7 @@ import ScrollTop from '../ScrollTop';
 import { NavMenu } from '../NavMenu';
 import { PlanTrip } from '../PlanTrip';
 import { PickCar } from '../PickCar';
-
+import {Banner} from "../Banner";
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -18,6 +18,7 @@ export class Layout extends Component {
             <BookCar />
             <PlanTrip />
         <PickCar/>
+        <Banner/>
         <ScrollTop/>
       </div>
     );

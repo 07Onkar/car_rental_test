@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import Logo from "../images/Navbar/Car Rental.png"
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import Logo from "../images/Navbar/Car Rental.png";
 import "./styles/globalStyles.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 export class NavMenu extends Component {
@@ -19,15 +19,15 @@ export class NavMenu extends Component {
       this.setState({ scrollPosition: window.scrollY });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }
 
   openNav = () => {
-    this.setState(prevState => ({
+    this.setState((prevState) => ({
       nav: !prevState.nav,
     }));
   };
@@ -39,74 +39,70 @@ export class NavMenu extends Component {
     });
   };
 
-  componentDidMount() {
-    window.addEventListener('scroll', this.handleScroll);
-  }
-
   componentWillUnmount() {
-    window.removeEventListener('scroll', this.handleScroll);
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
     const { nav, scrollPosition, isScrolled } = this.state;
-    const navbarClass = scrollPosition > 0 ? 'navbar navbar-blur' : 'navbar';
+    const navbarClass = scrollPosition > 0 ? "navbar navbar-blur" : "navbar";
 
     return (
       <>
-            <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-                <div onClick={this.openNav} className="mobile-navbar_close">
-                    <FaTimes />
-                </div>
-                <ul className="mobile-navbar_links">
-                    <li>
-                        <Link onClick={this.openNav} to="/">
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/about">
-                            About
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/models">
-                            Models
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/testimonials">
-                            Testimonials
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/team">
-                            Our Team
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/contact">
-                            Contact
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/sign-in">
-                            Sign in
-                        </Link>
-                    </li>
-                    <li>
-                        <Link onClick={this.openNav} to="/register">
-                            Register
-                        </Link>
-                    </li>
-                </ul>
-            </div>
+        <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
+          <div onClick={this.openNav} className="mobile-navbar_close">
+            <FaTimes />
+          </div>
+          <ul className="mobile-navbar_links">
+            <li>
+              <Link onClick={this.openNav} to="/">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/about">
+                About
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/models">
+                Models
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/testimonials">
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/team">
+                Our Team
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/contact">
+                Contact
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/sign-in">
+                Sign in
+              </Link>
+            </li>
+            <li>
+              <Link onClick={this.openNav} to="/register">
+                Register
+              </Link>
+            </li>
+          </ul>
+        </div>
 
         {/* For Desktops */}
 
         <div className={navbarClass}>
           <div className="navbar_img">
             <Link onClick={() => window.scrollTo(0, 0)} to="/">
-              <img  className="navbar-logo" src={Logo}  alt="logo" />
+              <img className="navbar-logo" src={Logo} alt="logo" />
             </Link>
           </div>
           <ul className="navbar_links">
@@ -151,14 +147,11 @@ export class NavMenu extends Component {
           </div>
 
           {/* for Mobile */}
-                <div className="mobile-hamb" onClick={this.openNav}>
-                    <FaBars />
-                </div>
+          <div className="mobile-hamb" onClick={this.openNav}>
+            <FaBars />
+          </div>
         </div>
       </>
     );
   }
 }
-
-
-
