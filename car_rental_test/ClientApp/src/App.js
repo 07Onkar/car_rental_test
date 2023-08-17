@@ -7,6 +7,7 @@ import {About} from "./pages/About"
 import Models from "./pages/Models";
 import Testimonials from "./pages/TestimonialsPage";
 import Contact from "./pages/Contact";
+import { SignIn } from "./pages/SignIn";
 
 
 export default class App extends Component {
@@ -22,7 +23,8 @@ export default class App extends Component {
                 <Route path="/about" element={<About />} />
                 <Route path="/models" element={<Models />} />
                 <Route path="/testimonials" element={<Testimonials/>} />
-                <Route path="/contact" element={<Contact/>} /> 
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/sign-in" element={<SignIn />} />
         </Routes>
         </>
     );
