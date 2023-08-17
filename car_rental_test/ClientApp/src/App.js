@@ -4,6 +4,7 @@ import { Route, Routes } from "react-router-dom";
 import { NavMenu } from "./components/NavMenu";
 import { Home } from "./pages/Home";
 import {About} from "./pages/About"
+import Models from "./pages/Models";
 
 
 export default class App extends Component {
@@ -16,7 +17,8 @@ export default class App extends Component {
         <Routes>
           
           <Route path="/" element={<Home/>} />
-          <Route path="/about" element={<About/>} />
+                <Route path="/about" element={<About />} />
+                <Route path="/models" element={<Models />} />
         </Routes>
         </>
     );
