@@ -7,7 +7,9 @@ import { PlanTrip } from '../PlanTrip';
 import { PickCar } from '../PickCar';
 import {Banner} from "../Banner";
 import { Testimonials } from '../Testimonials';
-
+import { Faq } from '../Faq';
+import { Download } from '../Download';
+import {Footer} from "../Footer"
 export class Layout extends Component {
   static displayName = Layout.name;
 
@@ -22,6 +24,9 @@ export class Layout extends Component {
         <Banner/>
         {/* Add the ChooseUs Folder */}
         <Testimonials/>
+        <Faq/>
+        <Download/>
+        <Footer/>
         <ScrollTop/>
       </div>
     );
