@@ -6,6 +6,7 @@ import { NavMenu } from '../NavMenu';
 import { PlanTrip } from '../PlanTrip';
 import { PickCar } from '../PickCar';
 import {Banner} from "../Banner";
+import { Testimonials } from '../Testimonials';
 
 export class Layout extends Component {
   static displayName = Layout.name;
@@ -19,6 +20,8 @@ export class Layout extends Component {
             <PlanTrip />
         <PickCar/>
         <Banner/>
+        {/* Add the ChooseUs Folder */}
+        <Testimonials/>
         <ScrollTop/>
       </div>
     );
