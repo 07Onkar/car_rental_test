@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from "../images/Navbar/Car Rental.png"
-import "./styles/NavMenu.css"
+import "./styles/globalStyles.css"
 export class NavMenu extends Component {
   constructor(props) {
     super(props);
