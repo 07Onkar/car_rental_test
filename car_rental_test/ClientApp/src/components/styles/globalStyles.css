@@ -2416,11 +2416,7 @@
           padding-top:10px;
       }
   }
-  @media(max-height:821px){
-    .ui-panel{
-      
-    }
-  }
+
   .background-image {
     position: absolute;
     top: 0;
