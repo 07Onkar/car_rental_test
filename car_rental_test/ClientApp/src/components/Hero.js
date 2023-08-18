@@ -38,7 +38,7 @@ export class Hero extends Component {
                     Book Ride &nbsp;{" "}
                     <i className="fa-solid fa-circle-check"></i>
                   </Link>
-                  <Link className="hero-content_text_btns_learn-more" to="/">
+                  <Link className="hero-content_text_btns_learn-more" to="/about">
                     Learn More &nbsp;{" "}
                     <i className="fa-solid fa-angle-right"></i>
                   </Link>
