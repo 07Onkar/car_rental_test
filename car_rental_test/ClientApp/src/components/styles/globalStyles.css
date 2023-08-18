@@ -22,9 +22,7 @@
   }
   
   /* For the Links in the Buttons */
-  a:hover{
-    color:white;
-  }
+  
 
   h2{
     font-weight: 600;
@@ -2404,10 +2402,14 @@
     flex-direction: column; /* Change flex-direction to column */
     justify-content: flex-start; /* Align items from the top */
     align-items: center;
-    height: 50vh;
+    height: 72vh;
     color: rgb(0, 0, 0);
     box-shadow: 0px 0px 12px rgba(193, 59, 255, 0.3);
     z-index: 1;
+    padding-top:110px;
+  }
+  .ui-main{
+      padding-top:70px;
   }
   
   .background-image {
@@ -2541,6 +2543,9 @@
   .register-page {
     padding-top: 78px;
   }
+  .register-page , a , a:hover{
+      text-decoration:none
+  }
   
   .container-register {
     max-width: 500px;
@@ -2581,15 +2586,15 @@
     text-align: center;
     position: relative;
     margin: 1px 1px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
   }
   
   .signup-head::before,
   .signup-head::after {
     content: "";
     position: absolute;
-    top: 50%;
-    width: 25%;
+    top: 30%;
+    width: 20%;
     border-top: 1px solid #9c9c9c;
   }
   

@@ -5,6 +5,7 @@ import { FaSignInAlt } from "react-icons/fa";
 export class SigninC extends Component {
     render() {
         return (
+            <div className="ui-main">
             <div className="ui-panel">
                 <div className="background-image"></div>
                 <div className="login-form">
@@ -25,6 +26,7 @@ export class SigninC extends Component {
                 </a>
                 <br />
                 <Captcha />
+            </div>
             </div>
         );
     }
