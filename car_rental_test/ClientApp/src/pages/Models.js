@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+﻿import React, { Component } from "react";
 import { Footer } from "../components/Footer";
 import { HeroPages } from "../components/HeroPages";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,6 +6,7 @@ import {
     faPhone,
     faStar,
     faCarSide,
+    faRupeeSign,
     faDollarSign,
 } from "@fortawesome/free-solid-svg-icons";
 import CarImg1 from "../images/cars-big/audi.png";
@@ -42,7 +43,7 @@ class Models extends Component {
                                         </div>
                                         <div className="models-div_box_descr_name-price_price">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 20000
+                                                ₹ 20000
                                             </h4>
                                             <p>per day</p>
                                         </div>
@@ -88,7 +89,7 @@ class Models extends Component {
                                         </div>
                                         <div className="models-div_box_descr_name-price_price">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 36000
+                                                ₹ 36000
                                             </h4>
                                             <p>per day</p>
                                         </div>
@@ -133,9 +134,9 @@ class Models extends Component {
                                                 <FontAwesomeIcon icon={faStar} />
                                             </span>
                                         </div>
-                                        <div className="models-div_box_descr_name-price_price">
+                                        <div className="models-div_box_descr_name-price_price ">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 40000
+                                                ₹&nbsp;40000
                                             </h4>
                                             <p>per day</p>
                                         </div>
@@ -180,9 +181,9 @@ class Models extends Component {
                                                 <FontAwesomeIcon icon={faStar} />
                                             </span>
                                         </div>
-                                        <div className="models-div_box_descr_name-price_price">
+                                        <div className="models-div_box_descr_name-price_price ">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 35000
+                                                ₹&nbsp;35000
                                             </h4>
                                             <p>per day</p>
                                         </div>
@@ -226,9 +227,9 @@ class Models extends Component {
                                                 <FontAwesomeIcon icon={faStar} />
                                             </span>
                                         </div>
-                                        <div className="models-div_box_descr_name-price_price">
+                                        <div className="models-div_box_descr_name-price_price ">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 25000
+                                                ₹&nbsp;25000
                                             </h4>
                                             <p>per day</p>
                                         </div>
@@ -264,7 +265,7 @@ class Models extends Component {
                                 <div className="models-div_box_descr">
                                     <div className="models-div_box_descr_name-price">
                                         <div className="models-div_box_descr_name-price_name">
-                                            <p>Ferrari LaFerrari</p>
+                                            <p>Ferrari &nbsp; LaFerrari &nbsp; </p>
                                             <span>
                                                 <FontAwesomeIcon icon={faStar} />
                                                 <FontAwesomeIcon icon={faStar} />
@@ -275,7 +276,7 @@ class Models extends Component {
                                         </div>
                                         <div className="models-div_box_descr_name-price_price">
                                             <h4>
-                                                <FontAwesomeIcon icon={faDollarSign} /> 30000
+                                                 ₹&nbsp;30000
                                             </h4>
                                             <p>per day</p>
                                         </div>
