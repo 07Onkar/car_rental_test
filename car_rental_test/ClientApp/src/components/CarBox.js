@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+﻿import React, { Component } from "react";
 
 export class CarBox extends Component {
     constructor(props) {
@@ -37,7 +37,7 @@ export class CarBox extends Component {
                         {/* description */}
                         <div className="pick-description">
                             <div className="pick-description_price">
-                                <span>${car.price}</span>/ rent per day
+                                <span>₹&nbsp;{car.price}</span>/ rent per day
                             </div>
                             <div className="pick-description_table">
                                 <div className="pick-description_table_col">
