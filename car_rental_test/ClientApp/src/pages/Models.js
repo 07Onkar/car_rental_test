@@ -5,9 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faPhone,
     faStar,
-    faCarSide,
-    faRupeeSign,
-    faDollarSign,
+    faCarSide
 } from "@fortawesome/free-solid-svg-icons";
 import CarImg1 from "../images/cars-big/audi.png";
 import CarImg2 from "../images/cars-big/aventador.jpg";
@@ -17,11 +15,13 @@ import CarImg5 from "../images/cars-big/McLerean.jpg";
 import CarImg6 from "../images/cars-big/panamera-turbo.jpg";
 import { Link } from "react-router-dom";
 import ScrollTop from "../components/ScrollTop";
+import { NavMenu } from "../components/NavMenu";
 
 class Models extends Component {
     render() {
         return (
             <section className="models-section">
+            <NavMenu/>
                 <HeroPages name="Vehicle Models" />
                 <div className="container">
                     <div className="models-div">

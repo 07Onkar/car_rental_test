@@ -4,11 +4,13 @@ import { faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import Img1 from "../images/testimonials/first.jpg";
 import Img2 from "../images/testimonials/second.png";
 
+
 export class Testimonials extends Component {
   render() {
     return (
       <>
         <section className="testimonials-section">
+
           <div className="conatiner">
             <div className="testimonials-content">
               <div className="testimonials-content_title">

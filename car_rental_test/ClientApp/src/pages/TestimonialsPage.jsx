@@ -5,6 +5,7 @@ import {Testimonials} from "../components/Testimonials"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 import ScrollTop from '../components/ScrollTop';
+import { NavMenu } from '../components/NavMenu';
 
 class TestimonialsPage extends Component {
   render() {
@@ -12,6 +13,7 @@ class TestimonialsPage extends Component {
       <>
         <section className="testimonial-page">
           <HeroPages name="Testimonials" />
+          <NavMenu/>
           <Testimonials />
           <div className="book-banner">
             <div className="book-banner__overlay"></div>

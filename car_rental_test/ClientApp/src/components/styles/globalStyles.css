@@ -193,6 +193,28 @@
     color: #ad21ff;
   }
   
+
+  .user_name{
+      color: #000000;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 16px;
+  }
+  .user_profile{
+      position: relative;
+      right:60px;
+  }
+  .user_icon{
+    font-size: 25px;
+  }
+    
+  .user_name:hover , .user_icon:hover {
+    color: #ad21ff;
+  }
+    
+  
+
+
   @media (max-width: 1000px) {
     .mobile-hamb {
       display: flex;

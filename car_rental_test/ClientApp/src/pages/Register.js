@@ -6,6 +6,7 @@ import { HeroPages } from "../components/HeroPages";
 import { Footer } from "../components/Footer";
 import ScrollTop from "../components/ScrollTop";
 import { Link } from "react-router-dom";
+import { NavMenu } from "../components/NavMenu";
 
 export class Register extends Component {
     constructor(props) {
@@ -68,6 +69,7 @@ export class Register extends Component {
 
         return (
             <>
+                <NavMenu/>
                 <HeroPages name="Register" />
                 <section className="register-page ">
                     <div className="container-register">

@@ -9,12 +9,14 @@ import Box3 from "../images/about/icon3.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import ScrollTop from "../components/ScrollTop";
+import { NavMenu } from "../components/NavMenu";
 
 export class About extends Component {
   render() {
     return (
       <>
         <section className="about-page">
+        <NavMenu/>
           <HeroPages name="About" />
           <div className="container">
             <div className="about-main">

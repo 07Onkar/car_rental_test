@@ -9,11 +9,13 @@ import {
   faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import ScrollTop from "../components/ScrollTop";
+import { NavMenu } from '../components/NavMenu';
 
 class Contact extends Component {
   render() {
     return (
       <>
+      <NavMenu/>
         <section className="contact-page">
           <HeroPages name="Contact" />
           <div className="container">

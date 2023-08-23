@@ -10,13 +10,14 @@ import { Faq } from "../components/Faq";
 import { Download } from "../components/Download";
 import { Footer } from "../components/Footer";
 import ChooseUs from "../components/ChooseUs";
+import { NavMenu } from "../components/NavMenu";
 export class Home extends Component {
   static displayName = Home.name;
 
   render() {
     return (
       <div>
-        
+        <NavMenu/>
         <Hero />
         <BookCar />
         <PlanTrip />
